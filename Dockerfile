@@ -1,6 +1,7 @@
 FROM percona:5.6
 
 ENV SCRIPTS_DEPS=" \
+    https://raw.githubusercontent.com/do-community/ubuntu-1604-mysql-backup/master/object_storage.py \
     https://raw.githubusercontent.com/do-community/ubuntu-1604-mysql-backup/master/backup-mysql.sh \
     https://raw.githubusercontent.com/do-community/ubuntu-1604-mysql-backup/master/extract-mysql.sh \
     https://raw.githubusercontent.com/do-community/ubuntu-1604-mysql-backup/master/prepare-mysql.sh"
