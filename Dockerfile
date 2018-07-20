@@ -12,3 +12,4 @@ RUN apt-get update && yes N | apt-get install -y \
   && rm -rf /var/lib/apt/lists/*
 RUN wget ${SCRIPTS_DEPS} -P /usr/local/bin/ \
     && chmod +x /usr/local/bin/*-mysql.sh
+RUN mkdir -p /data/backups/
