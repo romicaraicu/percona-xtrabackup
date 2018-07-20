@@ -10,5 +10,4 @@ RUN apt-get update && yes N | apt-get install -y \
   --no-install-suggests percona-xtrabackup-24 qpress curl wget \
   && rm -rf /var/lib/apt/lists/*
 RUN wget ${SCRIPTS_DEPS} -P /usr/local/bin/ \
-    && chmod +x /usr/local/bin/*-mysql.sh \
-    && rm /usr/local/bin/gosu
+    && chmod +x /usr/local/bin/*-mysql.sh
